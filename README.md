@@ -1,5 +1,5 @@
-# nfotools
+# infojsontools
 
-[![Build Status](https://travis-ci.org/lumue/nfotools.svg?branch=master)](https://travis-ci.org/lumue/nfotools)
+[![Build Status](https://travis-ci.org/lumue/nfotools.svg?branch=master)](https://travis-ci.org/lumue/infojsontools)
 
-serialize movie metadata to [Kodi`s .nfo xml Format](http://kodi.wiki/view/NFO_files) with java and jaxb
+java parser for media metadata from [Youtube-dl`s .info.json json Format](https://github.com/rg3/youtube-dl).
