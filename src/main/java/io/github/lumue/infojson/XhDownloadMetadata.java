@@ -62,11 +62,11 @@ public class XhDownloadMetadata  implements DownloadMetadata {
     @JsonProperty("fulltitle")
     private String fulltitle;
     @JsonProperty("playlist_index")
-    private Object playlistIndex;
+    private Long playlistIndex;
     @JsonProperty("view_count")
     private long viewCount;
     @JsonProperty("playlist")
-    private Object playlist;
+    private String playlist;
     @JsonProperty("http_headers")
     private HttpHeaders httpHeaders;
     @JsonProperty("_filename")
@@ -238,17 +238,17 @@ public class XhDownloadMetadata  implements DownloadMetadata {
      *     The playlistIndex
      */
     @JsonProperty("playlist_index")
-    public Object getPlaylistIndex() {
+    public Long getPlaylistIndex() {
         return playlistIndex;
     }
 
     /**
-     * 
+     *
      * @param playlistIndex
      *     The playlist_index
      */
     @JsonProperty("playlist_index")
-    public void setPlaylistIndex(Object playlistIndex) {
+    public void setPlaylistIndex(Long playlistIndex) {
         this.playlistIndex = playlistIndex;
     }
 
@@ -278,17 +278,17 @@ public class XhDownloadMetadata  implements DownloadMetadata {
      *     The playlist
      */
     @JsonProperty("playlist")
-    public Object getPlaylist() {
+    public String getPlaylist() {
         return playlist;
     }
 
     /**
-     * 
+     *
      * @param playlist
      *     The playlist
      */
     @JsonProperty("playlist")
-    public void setPlaylist(Object playlist) {
+    public void setPlaylist(String playlist) {
         this.playlist = playlist;
     }
 
@@ -713,6 +713,7 @@ public class XhDownloadMetadata  implements DownloadMetadata {
         this.formats = formats;
     }
 
+    @Override
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;

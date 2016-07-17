@@ -80,11 +80,11 @@ public class YoutubeDownloadMetadata  implements DownloadMetadata {
     @JsonProperty("fulltitle")
     private String fulltitle;
     @JsonProperty("playlist_index")
-    private Object playlistIndex;
+    private Long playlistIndex;
     @JsonProperty("view_count")
     private long viewCount;
     @JsonProperty("playlist")
-    private Object playlist;
+    private String playlist;
     @JsonProperty("title")
     private String title;
     @JsonProperty("_filename")
@@ -292,17 +292,17 @@ public class YoutubeDownloadMetadata  implements DownloadMetadata {
      *     The playlistIndex
      */
     @JsonProperty("playlist_index")
-    public Object getPlaylistIndex() {
+    public Long getPlaylistIndex() {
         return playlistIndex;
     }
 
     /**
-     * 
+     *
      * @param playlistIndex
      *     The playlist_index
      */
     @JsonProperty("playlist_index")
-    public void setPlaylistIndex(Object playlistIndex) {
+    public void setPlaylistIndex(Long playlistIndex) {
         this.playlistIndex = playlistIndex;
     }
 
@@ -332,7 +332,7 @@ public class YoutubeDownloadMetadata  implements DownloadMetadata {
      *     The playlist
      */
     @JsonProperty("playlist")
-    public Object getPlaylist() {
+    public String getPlaylist() {
         return playlist;
     }
 
@@ -342,7 +342,7 @@ public class YoutubeDownloadMetadata  implements DownloadMetadata {
      *     The playlist
      */
     @JsonProperty("playlist")
-    public void setPlaylist(Object playlist) {
+    public void setPlaylist(String playlist) {
         this.playlist = playlist;
     }
 
@@ -1127,6 +1127,7 @@ public class YoutubeDownloadMetadata  implements DownloadMetadata {
     }
 
     @JsonAnyGetter
+    @Override
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
     }

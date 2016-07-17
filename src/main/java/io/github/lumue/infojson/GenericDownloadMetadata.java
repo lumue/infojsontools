@@ -41,7 +41,7 @@ public class GenericDownloadMetadata implements DownloadMetadata {
     @JsonProperty("extractor")
     private String extractor;
     @JsonProperty("playlist")
-    private Object playlist;
+    private String playlist;
     @JsonProperty("protocol")
     private String protocol;
     @JsonProperty("format")
@@ -53,9 +53,9 @@ public class GenericDownloadMetadata implements DownloadMetadata {
     @JsonProperty("title")
     private String title;
     @JsonProperty("playlist_index")
-    private Object playlistIndex;
+    private Long playlistIndex;
     @JsonProperty("thumbnail")
-    private Object thumbnail;
+    private String thumbnail;
     @JsonProperty("ext")
     private String ext;
     @JsonProperty("fulltitle")
@@ -126,7 +126,7 @@ public class GenericDownloadMetadata implements DownloadMetadata {
      */
     @Override
     @JsonProperty("playlist")
-    public Object getPlaylist() {
+    public String getPlaylist() {
         return playlist;
     }
 
@@ -141,7 +141,7 @@ public class GenericDownloadMetadata implements DownloadMetadata {
      *     The playlist
      */
     @JsonProperty("playlist")
-    public void setPlaylist(Object playlist) {
+    public void setPlaylist(String playlist) {
         this.playlist = playlist;
     }
 
@@ -255,17 +255,17 @@ public class GenericDownloadMetadata implements DownloadMetadata {
      */
     @Override
     @JsonProperty("playlist_index")
-    public Object getPlaylistIndex() {
+    public Long getPlaylistIndex() {
         return playlistIndex;
     }
 
     /**
-     * 
+     *
      * @param playlistIndex
      *     The playlist_index
      */
     @JsonProperty("playlist_index")
-    public void setPlaylistIndex(Object playlistIndex) {
+    public void setPlaylistIndex(Long playlistIndex) {
         this.playlistIndex = playlistIndex;
     }
 
@@ -276,17 +276,17 @@ public class GenericDownloadMetadata implements DownloadMetadata {
      */
     @Override
     @JsonProperty("thumbnail")
-    public Object getThumbnail() {
+    public String getThumbnail() {
         return thumbnail;
     }
 
     /**
-     * 
+     *
      * @param thumbnail
      *     The thumbnail
      */
     @JsonProperty("thumbnail")
-    public void setThumbnail(Object thumbnail) {
+    public void setThumbnail(String thumbnail) {
         this.thumbnail = thumbnail;
     }
 
@@ -478,6 +478,7 @@ public class GenericDownloadMetadata implements DownloadMetadata {
     }
 
     @JsonAnyGetter
+    @Override
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
     }

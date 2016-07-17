@@ -43,7 +43,7 @@ public class StreamcloudDownloadMetadata  implements DownloadMetadata {
     @JsonProperty("extractor")
     private String extractor;
     @JsonProperty("playlist")
-    private Object playlist;
+    private String playlist;
     @JsonProperty("protocol")
     private String protocol;
     @JsonProperty("thumbnails")
@@ -57,7 +57,7 @@ public class StreamcloudDownloadMetadata  implements DownloadMetadata {
     @JsonProperty("title")
     private String title;
     @JsonProperty("playlist_index")
-    private Object playlistIndex;
+    private Long playlistIndex;
     @JsonProperty("thumbnail")
     private String thumbnail;
     @JsonProperty("ext")
@@ -125,7 +125,7 @@ public class StreamcloudDownloadMetadata  implements DownloadMetadata {
      *     The playlist
      */
     @JsonProperty("playlist")
-    public Object getPlaylist() {
+    public String getPlaylist() {
         return playlist;
     }
 
@@ -140,7 +140,7 @@ public class StreamcloudDownloadMetadata  implements DownloadMetadata {
      *     The playlist
      */
     @JsonProperty("playlist")
-    public void setPlaylist(Object playlist) {
+    public void setPlaylist(String playlist) {
         this.playlist = playlist;
     }
 
@@ -270,7 +270,7 @@ public class StreamcloudDownloadMetadata  implements DownloadMetadata {
      *     The playlistIndex
      */
     @JsonProperty("playlist_index")
-    public Object getPlaylistIndex() {
+    public Long getPlaylistIndex() {
         return playlistIndex;
     }
 
@@ -280,7 +280,7 @@ public class StreamcloudDownloadMetadata  implements DownloadMetadata {
      *     The playlist_index
      */
     @JsonProperty("playlist_index")
-    public void setPlaylistIndex(Object playlistIndex) {
+    public void setPlaylistIndex(Long playlistIndex) {
         this.playlistIndex = playlistIndex;
     }
 
@@ -465,6 +465,7 @@ public class StreamcloudDownloadMetadata  implements DownloadMetadata {
     }
 
     @JsonAnyGetter
+    @Override
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
     }
