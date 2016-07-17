@@ -1,0 +1,28 @@
+{
+  "display_id": "e6469224d0",
+  "extractor": "Shared",
+  "playlist": null,
+  "protocol": "http",
+  "format": "0 - unknown",
+  "url": "http://sofia.storage.shared.sx:8080/get/0006450425?e=1462810923&s=200&m=video/mp4&h=LroI0g5DFzGVVR8RshXTmA",
+  "extractor_key": "Shared",
+  "title": "-KinoX.to(97690)-bySGexx.mp4",
+  "playlist_index": null,
+  "thumbnail": null,
+  "ext": "mp4",
+  "fulltitle": "-KinoX.to(97690)-bySGexx.mp4",
+  "filesize": 484915737,
+  "webpage_url": "http://shared.sx/e6469224d0",
+  "_filename": "_KinoX.to(97690)-bySGexx.mp4.f0.mp4",
+  "format_id": "0",
+  "http_headers": {
+	"Accept-Language": "en-us,en;q=0.5",
+	"Accept-Encoding": "gzip, deflate",
+	"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+	"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/44.0 (Chrome)",
+	"Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+	"Cookie": "__cfduid=dc90c6ab10d94925c1042b1078e7caef01462796886"
+  },
+  "id": "e6469224d0",
+  "webpage_url_basename": "e6469224d0"
+}

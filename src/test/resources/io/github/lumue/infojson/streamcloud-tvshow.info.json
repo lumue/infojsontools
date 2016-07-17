@@ -1,0 +1,33 @@
+{
+  "display_id": "n6z4hvojd9uy",
+  "extractor": "streamcloud.eu",
+  "playlist": null,
+  "protocol": "http",
+  "thumbnails": [
+	{
+	  "url": "http://stor31.streamcloud.eu:8080/i/01/00793/n6z4hvojd9uy.jpg",
+	  "id": "0"
+	}
+  ],
+  "format": "0 - unknown",
+  "url": "http://stor31.streamcloud.eu:8080/2tv74g7acgoax3ptxziilw56x7h5cptnr2uff7yi3z5p4zo6d6sxb2txze/video.mp4",
+  "extractor_key": "Streamcloud",
+  "title": "Die-wilden-SiebzigerS04E19",
+  "playlist_index": null,
+  "thumbnail": "http://stor31.streamcloud.eu:8080/i/01/00793/n6z4hvojd9uy.jpg",
+  "ext": "mp4",
+  "fulltitle": "Die-wilden-SiebzigerS04E19",
+  "webpage_url": "http://streamcloud.eu/n6z4hvojd9uy/Die-wilden-SiebzigerS04E19.mp4.html",
+  "_filename": "Die-wilden-SiebzigerS04E19.f0.mp4",
+  "format_id": "0",
+  "http_headers": {
+	"Accept-Language": "en-us,en;q=0.5",
+	"Accept-Encoding": "gzip, deflate",
+	"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+	"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/47.0 (Chrome)",
+	"Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+	"Cookie": "lang=english"
+  },
+  "id": "n6z4hvojd9uy",
+  "webpage_url_basename": "Die-wilden-SiebzigerS04E19.mp4.html"
+}
