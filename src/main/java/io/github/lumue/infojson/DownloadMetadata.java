@@ -1,11 +1,13 @@
 package io.github.lumue.infojson;
 
 
+import java.util.List;
 import java.util.Map;
 
 /**
- * Created by lm on 17.07.16.
+ * metadata parsed from *.info.json files
  */
+@SuppressWarnings("WeakerAccess")
 public interface DownloadMetadata {
 
 	String getDisplayId();
@@ -28,6 +30,10 @@ public interface DownloadMetadata {
 
 	String getExt();
 
+	String getUploadDate();
+
+	long getLikeCount();
+
 	String getFulltitle();
 
 	String getWebpageUrl();
@@ -36,7 +42,11 @@ public interface DownloadMetadata {
 
 	String getFormatId();
 
+	List<String> getTags();
+
 	String getId();
+
+	long getAgeLimit();
 
 	String getWebpageUrlBasename();
 

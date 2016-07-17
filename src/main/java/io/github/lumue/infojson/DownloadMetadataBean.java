@@ -14,58 +14,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@Generated("org.jsonschema2pojo")
-@JsonPropertyOrder({
-    "upload_date",
-    "creator",
-    "height",
-    "like_count",
-    "duration",
-    "fulltitle",
-    "playlist_index",
-    "view_count",
-    "playlist",
-    "title",
-    "_filename",
-    "tags",
-    "is_live",
-    "id",
-    "dislike_count",
-    "average_rating",
-    "abr",
-    "uploader_url",
-    "categories",
-    "fps",
-    "stretched_ratio",
-    "age_limit",
-    "annotations",
-    "webpage_url_basename",
-    "acodec",
-    "display_id",
-    "automatic_captions",
-    "description",
-    "format",
-    "start_time",
-    "uploader",
-    "format_id",
-    "uploader_id",
-    "subtitles",
-    "thumbnails",
-    "license",
-    "alt_title",
-    "extractor_key",
-    "vcodec",
-    "thumbnail",
-    "vbr",
-    "ext",
-    "extractor",
-    "end_time",
-    "webpage_url",
-    "formats",
-    "resolution",
-    "width"
-})
-public class YoutubeDownloadMetadata  implements DownloadMetadata {
+class DownloadMetadataBean implements DownloadMetadata {
 
     @JsonProperty("upload_date")
     private String uploadDate;
@@ -171,6 +120,7 @@ public class YoutubeDownloadMetadata  implements DownloadMetadata {
      * @return
      *     The uploadDate
      */
+    @Override
     @JsonProperty("upload_date")
     public String getUploadDate() {
         return uploadDate;
@@ -231,6 +181,7 @@ public class YoutubeDownloadMetadata  implements DownloadMetadata {
      * @return
      *     The likeCount
      */
+    @Override
     @JsonProperty("like_count")
     public long getLikeCount() {
         return likeCount;
@@ -371,6 +322,7 @@ public class YoutubeDownloadMetadata  implements DownloadMetadata {
      * @return
      *     The filename
      */
+    @Override
     @JsonProperty("_filename")
     public String getFilename() {
         return filename;
@@ -391,6 +343,7 @@ public class YoutubeDownloadMetadata  implements DownloadMetadata {
      * @return
      *     The tags
      */
+    @Override
     @JsonProperty("tags")
     public List<String> getTags() {
         return tags;
@@ -591,6 +544,7 @@ public class YoutubeDownloadMetadata  implements DownloadMetadata {
      * @return
      *     The ageLimit
      */
+    @Override
     @JsonProperty("age_limit")
     public long getAgeLimit() {
         return ageLimit;

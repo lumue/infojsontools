@@ -17,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "url",
     "id"
 })
-public class Thumbnail {
+class Thumbnail {
 
     @JsonProperty("url")
     private String url;

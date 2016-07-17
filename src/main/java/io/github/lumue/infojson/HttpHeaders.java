@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "Accept-Charset",
     "Cookie"
 })
-public class HttpHeaders {
+class HttpHeaders {
 
     @JsonProperty("Accept-Language")
     private String acceptLanguage;

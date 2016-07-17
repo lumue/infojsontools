@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
 
 })
-public class AutomaticCaptions {
+class AutomaticCaptions {
 
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();

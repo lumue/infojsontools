@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "player_url",
     "resolution"
 })
-public class Format {
+class Format {
 
     @JsonProperty("asr")
     private Object asr;
