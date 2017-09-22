@@ -42,18 +42,6 @@ public class DownloadMetadataStreamParser implements Function<InputStream,Downlo
 			}
 	}
 
-	/**
-	 * Convert a Closeable to a Runnable by converting checked IOException
-	 * to UncheckedIOException
-	 */
-	private static Runnable asUncheckedRunnable(Closeable c) {
-		return () -> {
-			try {
-				c.close();
-			} catch (IOException e) {
-				throw new UncheckedIOException(e);
-			}
-		};
-	}
+	
 
 }
