@@ -47,6 +47,8 @@ public interface DownloadMetadata {
 	List<String> getCategories();
 
 	String getId();
+	
+	String getUploader();
 
 	long getAgeLimit();
 
